@@ -1,5 +1,5 @@
 {
- "label": "Looker BigQueryML Extension App",
+  "label": "Looker BigQueryML Extension App",
   "category_label": "Applications",
   "branding": {
     "tagline": "Looker BigQueryML Extension App",
@@ -16,7 +16,7 @@
     "bigquery_connection_name": {
       "label": "BigQuery Connection Name",
       "type": "string",
-      "default_value": "4mile_bigquery"
+      "default_value": ""
     },
     "google_client_id": {
       "label": "Google Client ID",
