@@ -21,6 +21,16 @@ view: model_info {
     sql: ${TABLE}.created_by_email ;;
   }
 
+  dimension: created_by_first_name {
+    type: string
+    sql: ${TABLE}.created_by_first_name ;;
+  }
+
+  dimension: created_by_last_name {
+    type: string
+    sql: ${TABLE}.created_by_last_name ;;
+  }
+
   dimension: shared_with_emails {
     type: string
     sql: ${TABLE}.shared_with_emails ;;
