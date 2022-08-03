@@ -1,4 +1,5 @@
-connection: "@{CONNECTION_NAME}"
+# connection: "@{CONNECTION_NAME}"
+connection: "4mile_bigquery"
 
 include: "/explores/model_info.explore"
 include: "/explores/selection_summary.explore"
