@@ -2,7 +2,8 @@ project_name: "app-bqml-accelerator"
 
 application: bqml-accelerator {
   label: "BQML Accelerator"
-  file: "bundle.js"
+  # file: "bundle.js"
+  url: "http://localhost:8080/bundle.js"
   entitlements: {
     core_api_methods: ["all_lookml_models", "create_query", "run_query", "lookml_model_explore", "model_fieldname_suggestions", "me", "user_attribute_user_values"]
     use_form_submit: yes
@@ -17,12 +18,14 @@ application: bqml-accelerator {
       "looker_client_secret",
       "access_token_server_endpoint"
     ]
-    external_api_urls: ["https://bigquery.googleapis.com"]
+    # external_api_urls: ["https://bigquery.googleapis.com"]
+    external_api_urls: ["https://bigquery.googleapis.com", "https://sunlit-descent-196820.uc.r.appspot.com"]
     oauth2_urls: ["https://accounts.google.com/o/oauth2/v2/auth"]
   }
 }
 
 constant: CONNECTION_NAME {
+  # value: "connection"
   value: "connection"
   export: override_required
 }
