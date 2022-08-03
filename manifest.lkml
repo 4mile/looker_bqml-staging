@@ -1,4 +1,4 @@
-project_name: "bqml-accelerator"
+project_name: "app-bqml-accelerator"
 
 application: bqml-accelerator {
   label: "BQML Accelerator"
@@ -28,12 +28,10 @@ constant: CONNECTION_NAME {
   export: override_required
 }
 
-constant: bqml_model_dataset_name {
+constant: BQML_MODEL_DATASET_NAME {
   value: "{{_user_attributes['bqml_model_dataset_name']}}"
-  export: override_required
 }
 
 constant: GCP_PROJECT {
   value: "{{_user_attributes['gcp_project']}}"
-  export: override_required
 }
