@@ -34,3 +34,5 @@ constant: BQML_MODEL_DATASET_NAME {
 constant: GCP_PROJECT {
   value: "{{_user_attributes['gcp_project']}}"
 }
+
+# delete me test
