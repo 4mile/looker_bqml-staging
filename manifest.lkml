@@ -2,8 +2,8 @@ project_name: "app-bqml-accelerator"
 
 application: bqml-accelerator {
   label: "BQML Accelerator"
-  file: "bundle.js"
-  # url: "http://localhost:8080/bundle.js"
+  # file: "bundle.js"
+  url: "http://localhost:8090/bundle.js"
   entitlements: {
     core_api_methods: ["all_lookml_models", "create_query", "run_query", "lookml_model_explore", "model_fieldname_suggestions", "me", "user_attribute_user_values"]
     use_form_submit: yes
